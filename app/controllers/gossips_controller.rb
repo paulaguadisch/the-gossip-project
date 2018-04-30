@@ -25,11 +25,11 @@ class GossipsController < ApplicationController
   def destroy
   	@gossip = Gossip.find(params[:id])
   	@gossip.destroy
-  	redirect_to gossips_path(@gossip.id)
+  	redirect_to gossips_path(params[:id])
   end
 
   def index
-
+  	@gossips = Gossip.all
   end
 
 
