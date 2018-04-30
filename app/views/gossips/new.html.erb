@@ -1,0 +1,14 @@
+	<body>
+		<h1>Lâche ton gossip</h1>
+
+		 <p>Ici, tu vas pouvoir écrire ce qui te passe par la tête, de manière anonyme.</p>
+
+		<%= form_for @gossip, url: {action: "create"} do |f| %>
+		  <%= f.text_field :anonymous_author, class: 'form-control' %>
+		  <%= f.text_area :content, class: 'form-control' %>
+		  <%= f.submit "Envoyer" %>  
+		<% end %>
+	</body>
+
+
+<!-- ou:		  <button class= "btn btn-default">envoyer!</button>  -->

@@ -1,0 +1,9 @@
+<body>
+	<h1>Modifie ici ton gossip</h1>
+
+	<%= form_for @gossip, url: {action: "update"} do |f| %>
+	  <%= f.text_field :anonymous_author, class: 'form-control' %>
+	  <%= f.text_area :content, class: 'form-control' %>
+	  <%= f.submit "Envoyer" %>  
+	<% end %>
+</body>

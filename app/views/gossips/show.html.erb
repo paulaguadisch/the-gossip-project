@@ -1,0 +1,16 @@
+<h1>Voici la page de ton gossip <%= @gossip.anonymous_author %> PETIT COQUIN !</h1>
+
+	<p>Le voici d'ailleurs:</p>
+
+    <p><%= @gossip.content %></p>
+
+    <p> Tu peux le modifier ici</p>
+
+	<p>
+    	<a href="<%= edit_gossip_path %>" class="btn btn-default">Editer</a>
+    	<a href="<%= gossips_path %>" class="btn btn-primary">Revenir à l'index</a>
+    	<a href="<%= gossips_path %>" class="btn btn-danger" data-confirm="Êtes-vous sur?">Supprimer</a>
+    </p>
+
+
+
