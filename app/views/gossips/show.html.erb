@@ -1,10 +1,8 @@
-<h1>Voici la page de ton gossip <%= @gossip.anonymous_author %> !</h1>
+<h1>Hello <%= @gossip.anonymous_author %> 🙊</h1>
 
-	<p>Le voici d'ailleurs:</p>
+	<p>Voici ton gossip !</p>
 
     <p><%= @gossip.content %></p>
-
-    <p> Tu peux le modifier ici</p>
 
 	<p>
     	<a href="<%= edit_gossip_path %>" class="btn btn-default">Editer</a>
