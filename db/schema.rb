@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_30_130949) do
+ActiveRecord::Schema.define(version: 2018_05_01_103848) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string "anonymous_comment"
+    t.string "body"
+  end
 
   create_table "gossips", force: :cascade do |t|
     t.string "anonymous_author"
